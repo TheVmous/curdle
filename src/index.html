@@ -6,21 +6,26 @@
     <title>Curdle</title>
     <link rel="shortcut icon" href="resources/wordle-logo-glitched.png">
 </head>
+
 <body>
     <img src="resources/wordle-logo-glitched.png"
          alt="glitchy Wordle logo"
          style="width:100px;height:100px;">
     <h1>Curdle</h1>
     <label>Pick your word Length:</label>
-    <form id="main-game">
-        <select id="input-word-length" name="word-length">
-            <option value="4">4</option>
-            <option value="5" selected>5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-        </select>
+    <main>
+        <form id="word-length-selector">
+            <select id="input-word-length" name="word-length">
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </form>
 
-        
-    </form>
+        <div class="letter-grid">
+            <div class="square"></div>
+        </div>
+    </main>
 </body>
 </html>
